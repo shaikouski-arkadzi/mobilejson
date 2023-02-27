@@ -1,14 +1,11 @@
-
-
+<!doctype html>
+<html>
+    <head>
 
         <script type="text/javascript" >
-            function output(inp) {
-    document.body.appendChild(document.createElement('pre')).innerHTML = inp;
-}
+            var data = 
 
-
-
-var obj = {
+{
   "applinks": {
     "apps": [],
     "details": [
@@ -18,9 +15,13 @@ var obj = {
       }
     ]
   }
-};
-var str = JSON.stringify(obj, undefined, 4);
+}
 
-output(str);
+
+document.getElementById("json").textContent = JSON.stringify(data, undefined, 2);
         </script>
-
+    </head>
+    <body>
+       <pre id="json"></pre>
+    </body>
+</html>
