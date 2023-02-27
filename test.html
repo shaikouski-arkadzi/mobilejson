@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" >
+            (function() {
+        var element = document.getElementById("json");
+        var obj = JSON.parse(element.innerText);
+        element.innerHTML = JSON.stringify(obj, undefined, 2);
+    })();
+        </script>
+    </head>
+    <body>
+        <pre id="json">{"some":"JSON string"}</pre>
+    </body>
+</html>
